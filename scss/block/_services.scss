@@ -1,0 +1,54 @@
+.services {
+  padding: $padding-vertical-top 0 $padding-vertical-bottom 0;
+  background: url(../images/bg-gray.jpg) center top no-repeat;
+  background-size: cover;
+
+  &__container {
+  }
+  &__subtitle {
+    line-height: calc($base * 4.5);
+    margin-bottom: calc($base * 4.5);
+    text-align: center;
+    letter-spacing: 0.3px;
+  }
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: calc($base * 20);
+  }
+  &__slider {
+  }
+}
+
+.slider-service {
+  &__body {
+    margin-bottom: calc($base * 10);
+  }
+  &__item {
+    text-align: center;
+    padding: 0 calc($base * 4);
+  }
+  &__img {
+    text-align: center;
+    margin-bottom: calc($base * 6);
+    svg {
+      max-width: 156px;
+    }
+  }
+  &__caption {
+    font-size: calc($base * 4);
+  }
+  &__arrows {
+    text-align: center;
+    button {
+      @include transition;
+      font-size: calc($base * 6);
+      background: transparent;
+      color: $color-secondary;
+      margin: 0 calc($base * 5);
+      &:hover {
+        color: darken($color-secondary, 20%);
+      }
+    }
+  }
+}

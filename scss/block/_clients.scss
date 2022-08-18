@@ -1,0 +1,37 @@
+.clients {
+  padding: $padding-vertical-top 0 $padding-vertical-bottom 0;
+  background: url(../images/bg-gray.jpg) center top no-repeat;
+  background-size: cover;
+  &__subtitle {
+    text-align: center;
+    margin-bottom: calc($base * 4.5);
+  }
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: calc($base * 12);
+  }
+  &__slider {
+  }
+}
+
+.slider-clients {
+  padding: 0 calc($base * 2.5);
+  &__body {
+  }
+  &__item {
+    padding: 0 20px;
+  }
+  &__image {
+    @include transition;
+    filter: grayscale(1);
+    max-width: 100%;
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+  .slick-track {
+    display: inline-flex;
+    align-items: center;
+  }
+}

@@ -1,0 +1,25 @@
+/* Mixins */
+@mixin CormorantInfant() {
+  font-family: "CormorantInfant", serif;
+}
+
+@mixin josefin() {
+  font-family: "josefin", sans-serif;
+  letter-spacing: 0.2px;
+}
+
+@mixin icon() {
+  font-family: "myicons";
+}
+
+@mixin transition($duration: 0.175s) {
+  transition: all $duration;
+}
+
+/* /Variables */
+
+$color-primary: #292e36;
+$color-primary-1: #555555;
+$color-secondary: #e1b168;
+$color-light: #fff8f5;
+$color-primary-other: #555555;
