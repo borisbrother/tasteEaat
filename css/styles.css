@@ -324,6 +324,18 @@ body {
   border-color: #d99b3d;
 }
 
+.btn_form {
+  background-color: #fff;
+  color: #292e36;
+  border-color: transparent;
+}
+
+.btn_form:hover {
+  color: #292e36;
+  background-color: #e6e6e6;
+  border-color: transparent;
+}
+
 .tag {
   font-size: 15px;
   line-height: 22.5px;
@@ -347,6 +359,39 @@ body {
 .tag_black::before,
 .tag_black::after {
   background-color: #292e36;
+}
+
+.form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-field_2 {
+  width: 49%;
+}
+
+.form-field_3 {
+  width: 32%;
+}
+
+.form-field_center {
+  text-align: center;
+}
+
+.form-input {
+  width: 100%;
+  border: 1px solid #858585;
+  background-color: transparent;
+  height: 70px;
+  line-height: 70px;
+  font-size: 22px;
+  line-height: 33px;
+  color: #fff;
+  padding: 0 23px;
 }
 
 .heading {
@@ -1027,6 +1072,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .item-offers__text {
@@ -1109,8 +1157,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin: 0 -15px;
 }
 
@@ -1351,4 +1397,66 @@ body {
 
 .reservation__heading {
   margin-bottom: 38px;
+}
+
+.reservation__group {
+  margin-bottom: 30px;
+}
+
+.reservation__field input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.reservation__field input:-moz-placeholder {
+  color: #fff;
+}
+
+.reservation__field input::-moz-placeholder {
+  color: #fff;
+}
+
+.reservation__field input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.footer {
+  padding-top: 129px;
+  background-color: #292e36;
+  color: #fff;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__item_feedback {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+  text-align: center;
+}
+
+.footer__hashtag {
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 132px;
+}
+
+.footer__tag {
+  margin-bottom: 33px;
+}
+
+.footer__contacts {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.footer__phone,
+.footer__email {
+  color: #e1b168;
 }

@@ -49,6 +49,16 @@ body {
       border-color: darken($color-secondary, 10%);
     }
   }
+  &_form {
+    background-color: #fff;
+    color: $color-primary;
+    border-color: transparent;
+    &:hover {
+      color: $color-primary;
+      background-color: darken(#fff, 10%);
+      border-color: transparent;
+    }
+  }
 }
 .tag {
   font-size: 15px;
@@ -75,6 +85,41 @@ body {
     }
   }
 }
+
+/* Стили формы */
+.form-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-field {
+  &_2 {
+    width: 49%;
+  }
+
+  &_3 {
+    width: 32%;
+  }
+  &_center {
+    text-align: center;
+  }
+  &_collapse {
+  }
+}
+.form-input {
+  width: 100%;
+  border: 1px solid #858585;
+  background-color: transparent;
+  height: 70px;
+  line-height: 70px;
+  font-size: 22px;
+  line-height: 33px;
+  color: #fff;
+  padding: 0 23px;
+}
+
+/* Конец стилей формы ---------------------------------- */
+
 .heading {
   text-align: center;
   &__tag {
@@ -679,7 +724,7 @@ body {
 .item-offers {
   padding: 40px;
   display: flex;
-
+  align-items: center;
   &__text {
     padding-top: 20px;
   }
@@ -758,7 +803,6 @@ body {
 
   &__list {
     display: flex;
-    flex-wrap: wrap;
     margin: 0 -15px;
   }
 
@@ -999,26 +1043,108 @@ body {
   &__form {
   }
 
+  &__group {
+    margin-bottom: 30px;
+  }
+
   &__field {
+    input {
+      @include placeholder {
+        color: #fff;
+      }
+    }
   }
 
   &__button {
   }
 }
-.heading {
+
+.footer {
+  padding-top: 129px;
+  background-color: $color-primary;
+  color: #fff;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    &_email {
+    }
+
+    &_feedback {
+      flex: 0 0 48%;
+      text-align: center;
+    }
+
+    &_social {
+    }
+  }
+
+  &__hashtag {
+    font-size: 22px;
+    line-height: 33px;
+    margin-bottom: 132px;
+  }
+
   &__tag {
+    margin-bottom: 33px;
   }
 
-  &__title {
+  &__contacts {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &__address {
+  }
+
+  &__phone,
+  &__email {
+    color: $color-secondary;
+  }
+
+  &__email {
+  }
+
+  &__logo {
+  }
+
+  &__slogan {
+  }
+
+  &__subscribe {
+  }
+
+  &__group {
+  }
+
+  &__field {
+  }
+
+  &__social {
+  }
+
+  &__whours {
+  }
+}
+.tag {
+}
+
+.social-footer {
+  &__item {
+  }
+  &__link {
   }
 }
 
-.form-field {
-  &_2 {
+.whours {
+  &__item {
   }
 
-  &_3 {
+  &__day {
   }
-}
-.btn {
+
+  &__time {
+  }
 }

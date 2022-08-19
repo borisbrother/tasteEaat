@@ -645,22 +645,129 @@
               <h3 class="reservation__title heading__title">Book Your Table</h3>
             </div>
             <form action="" class="reservation__form">
-              <div class="reservation__field form-field form-field_2">
-                <input type="text" name="username" placeholder="Name" />
-                <input type="email" name="email" placeholder="email" />
+              <div class="reservation__group form-group">
+                <div class="reservation__field form-field form-field_2">
+                  <input
+                    type="text"
+                    name="username"
+                    placeholder="Name"
+                    class="form-input"
+                  />
+                </div>
+                <div class="reservation__field form-field form-field_2">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    class="form-input"
+                  />
+                </div>
               </div>
-              <div class="reservation__field form-field form-field_3">
-                <input type="text" name="person" placeholder="Person" />
-                <input type="text" name="timing" placeholder="Timing" />
-                <input type="text" name="date" placeholder="Date" />
+              <div class="reservation__group form-group">
+                <div class="reservation__field form-field form-field_3">
+                  <input
+                    type="text"
+                    name="person"
+                    placeholder="Person"
+                    class="form-input"
+                  />
+                </div>
+                <div class="reservation__field form-field form-field_3">
+                  <input
+                    type="text"
+                    name="timing"
+                    placeholder="Timing"
+                    class="form-input"
+                  />
+                </div>
+                <div class="reservation__field form-field form-field_3">
+                  <input
+                    type="text"
+                    name="date"
+                    placeholder="Date"
+                    class="form-input"
+                  />
+                </div>
               </div>
-              <div class="reservation__field form-field">
-                <button class="reservation__button btn">Book A Table</button>
+              <div class="reservation__field form-field form-field_center">
+                <button class="reservation__button btn btn_form">
+                  Book A Table
+                </button>
               </div>
             </form>
           </div>
         </div>
       </div>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__item footer__item_email">
+            <div class="footer__hashtag">#TheTastEat</div>
+            <div class="footer__tag tag">Contact</div>
+            <div class="footer__contacts">
+              <div class="footer__address">5 Rue Dalou, 75015 Paris</div>
+              <div class="footer__phone">+123 456 789</div>
+              <div class="footer__email">josefin@mail.com</div>
+            </div>
+          </div>
+          <div class="footer__item footer__item_feedback">
+            <div class="footer__logo">
+              <img src="images/logo.png" alt="" />
+            </div>
+            <div class="footer__slogan">
+              Join our mailing list for updates, Get news & offers events.
+            </div>
+            <form action="" class="footer__subscribe">
+              <div class="footer__group form-group form-group_collapse">
+                <div class="footer__field form-field">
+                  <input type="text" class="form-input" />
+                </div>
+                <div class="footer__field form-field">
+                  <button class="btn btn-form">Subscribe</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="footer__item footer__item_social">
+            <div class="footer__social social-footer">
+              <div class="social-footer__item">
+                <a href="#!" class="social-footer__link"
+                  ><span class="icon-instagram"></span
+                ></a>
+              </div>
+              <div class="social-footer__item">
+                <a href="#!" class="social-footer__link"
+                  ><span class="icon-facebook"></span
+                ></a>
+              </div>
+              <div class="social-footer__item">
+                <a href="#!" class="social-footer__link"
+                  ><span class="icon-pinterest"></span
+                ></a>
+              </div>
+              <div class="social-footer__item">
+                <a href="#!" class="social-footer__link"
+                  ><span class="icon-twitter"></span
+                ></a>
+              </div>
+            </div>
+            <div class="footer__tag tag">Working Hours</div>
+            <div class="footer__whours whours">
+              <div class="whours__item">
+                <span class="whours__day">Mon – Fri:</span>
+                <span class="whours__time">7.00am – 6.00pm</span>
+              </div>
+              <div class="whours__item">
+                <span class="whours__day">Sat:</span>
+                <span class="whours__time">7.00am – 6.00pm</span>
+              </div>
+              <div class="whours__item">
+                <span class="whours__day">Sun:</span>
+                <span class="whours__time">8.00am – 6.00pm</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <script src="js/main.min.js"></script>
